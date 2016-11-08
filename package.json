@@ -1,0 +1,29 @@
+{
+  "name": "static-file-server",
+  "version": "1.0.0",
+  "description": "Static file server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guohr/static-file-server.git"
+  },
+  "keywords": [
+    "static",
+    "file",
+    "server"
+  ],
+  "author": "banyudu",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/guohr/static-file-server/issues"
+  },
+  "homepage": "https://github.com/guohr/static-file-server#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0"
+  }
+}
