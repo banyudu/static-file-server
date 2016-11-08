@@ -3,6 +3,7 @@ const https = require('https')
 const express = require('express')
 const config = require('./config')
 const auth = require('basic-auth')
+const morgan = require('morgan')
 
 let keyFile = config.sslKey || './key.pem'
 let certFile = config.sslCert || './cert.pem'
@@ -26,7 +27,9 @@ const midAuth = (req, res, next) => {
     }).send()
   }
 }
-app.use(auth)
+
+app.use(morgan('combined'))
+app.use(midAuth)
 let filePath = config.filePath || './'
 app.use('/', express.static(filePath))
 
