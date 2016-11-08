@@ -1,5 +1,8 @@
 module.exports = {
-  key: '',
-  cert: '',
-  list_port: 8765
+  key: './key.pem',
+  cert: './cert.pem',
+  listen_port: 8765,
+  filePath: '/srv/static_files',
+  username: 'foo',
+  password: 'bar'
 }
